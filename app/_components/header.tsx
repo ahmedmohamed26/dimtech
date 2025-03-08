@@ -17,15 +17,15 @@ const Header = () => {
     },
     {
       name: "History",
-      href: "/History",
+      href: "#history",
     },
     {
       name: "Community",
-      href: "/Community",
+      href: "#community",
     },
     {
       name: "Executive",
-      href: "/Executive",
+      href: "#executive",
     },
 
     {
@@ -53,7 +53,7 @@ const Header = () => {
                     <Link
                       className={`text-size16 ${
                         pathName === navItem.href
-                          ? "text-green-500"
+                          ? "text-primary"
                           : "text-white"
                       }`}
                       href={navItem.href}

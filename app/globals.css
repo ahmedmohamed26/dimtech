@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "react-alice-carousel/lib/alice-carousel.css";
 
 :root {
   --accent-10: #edf5ff;
@@ -14,7 +15,9 @@
   --accent-90: #001d6c;
   --accent-100: #001141;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: rgb(10, 35, 71);
   background: linear-gradient(
@@ -24,7 +27,7 @@ body {
     rgba(10, 35, 71, 1) 72%
   );
 
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
   color: #ffffff;
 
@@ -34,4 +37,33 @@ body {
 
 .container {
   @apply mx-auto  max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8;
+}
+
+.alice-carousel .alice-carousel__next-btn-item {
+  color: white;
+  border: 1px solid white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.alice-carousel .alice-carousel__prev-btn-item {
+  color: white;
+  border: 1px solid white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.alice-carousel .alice-carousel__prev-btn-item:hover,
+.alice-carousel .alice-carousel__next-btn-item:hover {
+  color: #fff;
 }
