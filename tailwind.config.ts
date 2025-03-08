@@ -26,6 +26,18 @@ const config: Config = {
         size24: "24px",
         size40: "40px",
       },
+      animation: {
+        rotate3d: "rotate3dAnimation 5s linear infinite",
+      },
+      keyframes: {
+        rotate3dAnimation: {
+          "0%": { transform: "scale(1) rotateZ(0deg) skew(0deg, 0deg)" },
+          "30%": { transform: "scale(1.1) rotateZ(120deg) skew(5deg, 2deg)" },
+          "50%": { transform: "scale(1.2) rotateZ(180deg) skew(10deg, 5deg)" },
+          "70%": { transform: "scale(1.1) rotateZ(240deg) skew(5deg, 2deg)" },
+          "100%": { transform: "scale(1) rotateZ(360deg) skew(0deg, 0deg)" },
+        },
+      },
     },
   },
   darkMode: "class",

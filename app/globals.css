@@ -4,6 +4,17 @@
 @import "react-alice-carousel/lib/alice-carousel.css";
 
 :root {
+  --accent-200: #000410;
+  --white: white;
+  --size-0: 0px;
+  --size-4: 16px;
+  --size-5: 32px;
+  --size-3: 8px;
+  --grey-80: #525252;
+  --size-6: 64px;
+  --subtle: #fff3;
+  --size-7: 128px;
+  --success: #009252;
   --accent-10: #edf5ff;
   --accent-20: #d0e2ff;
   --accent-30: #a6c8ff;
@@ -14,25 +25,31 @@
   --accent-80: #002d9c;
   --accent-90: #001d6c;
   --accent-100: #001141;
+  --grey-10: white;
+  --grey-20: #f4f4f4;
+  --grey-30: #e0e0e0;
+  --grey-40: #c6c6c6;
+  --grey-50: #a8a8a8;
+  --grey-60: #8d8d8d;
+  --grey-70: #6f6f6f;
+  --grey-90: #262626;
+  --grey-100: #101010;
+  --error: #810909;
+  --transparent: transparent;
+  --size-2: 4px;
+  --image-radius: 1000px;
+  --size-1: 2px;
+  --size-8: 256px;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
-  background: rgb(10, 35, 71);
-  background: linear-gradient(
-    140deg,
-    rgba(10, 35, 71, 1) 0%,
-    rgba(7, 51, 155, 1) 53%,
-    rgba(10, 35, 71, 1) 72%
-  );
-
-  /* height: 100vh; */
-  margin: 0;
-  color: #ffffff;
-
-  font-family: Arial, Helvetica, sans-serif;
-  /* height: 3000px; */
+  background-color: var(--accent-200);
+  color: var(--white);
+  flex-flow: column;
+  font-family: Interdisplay, Arial, sans-serif;
+  font-weight: 400;
 }
 
 .container {
@@ -66,4 +83,47 @@ body {
 .alice-carousel .alice-carousel__prev-btn-item:hover,
 .alice-carousel .alice-carousel__next-btn-item:hover {
   color: #fff;
+}
+
+@keyframes rotate3dAnimation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.custom-card,
+.default-card {
+  padding: var(--size-5);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color 0.3s, transform 0.3s;
+
+  /* Default styles */
+  border: 1px solid var(--accent-90);
+  border-radius: var(--size-4);
+  background-image: linear-gradient(
+      45deg,
+      var(--transparent),
+      var(--accent-200)
+    ),
+    linear-gradient(180deg, var(--accent-80), var(--accent-200));
+}
+
+/* Hover effect */
+.custom-card:hover {
+  border-color: var(--accent-70);
+  background-image: linear-gradient(
+    180deg,
+    var(--accent-80),
+    var(--accent-200)
+  );
+  transform: scale(0.95);
 }
