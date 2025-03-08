@@ -82,11 +82,8 @@ const Executive = () => {
   };
 
   const items = teamList.map((team, index) => (
-    <div className="item" data-value={index} key={index}>
-      <div
-        className="relative block overflow-hidden rounded-lg border-[#001141] mx-2 
-        bg-gradient-to-b from-[#002d9c] to-[#000410] p-6 sm:px-6 lg:px-4 "
-      >
+    <div className="item mx-2 h-40" data-value={index} key={index}>
+      <div className="custom-card">
         <div className="flex">
           <div className="hidden sm:block sm:shrink-0">
             <img
@@ -132,18 +129,20 @@ const Executive = () => {
       <h3 className="text-size40 mb-16 relative inline-block  after:content-[''] after:absolute after:left-0  after:bottom-[-10px] after:w-24 after:h-[3px] after:bg-white">
         Our Executive
       </h3>
-      <AliceCarousel
-        mouseTracking
-        items={items}
-        responsive={responsive}
-        controlsStrategy="responsive"
-        infinite
-        autoPlay
-        disableDotsControls
-        autoPlayInterval={2000}
-        animationDuration={2000}
-        onSlideChanged={() => setIsDragging(false)}
-      />
+      <div className="h-[300px] flex items-center justify-center px-4 rounded-lg">
+        <AliceCarousel
+          mouseTracking
+          items={items}
+          responsive={responsive}
+          controlsStrategy="responsive"
+          infinite
+          autoPlay
+          disableDotsControls
+          autoPlayInterval={2000}
+          animationDuration={2000}
+          onSlideChanged={() => setIsDragging(false)}
+        />
+      </div>
     </div>
   );
 };

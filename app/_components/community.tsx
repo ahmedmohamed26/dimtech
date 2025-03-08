@@ -60,14 +60,14 @@ const Community = () => {
               classNames={{
                 cursor: "w-full bg-primary text-white",
                 base: "text-white",
-                tabList: "flex justify-between w-full",
-                tab: "h-[50px]",
+                tabList: "flex justify-between w-full ",
+                tab: "h-[50px] ",
                 tabContent: "text-white lg:text-size18 text-size14",
-                panel: "w-full",
+                panel: "w-full ",
               }}
             >
               <Tab key="Academic" title="Academic">
-                <Card>
+                <Card className="default-card text-white">
                   <CardBody>
                     Since 2018, our partnership with Tsinghua University,
                     University of Montpellier, École des Mines d'Alès, and ESLIV
@@ -80,7 +80,7 @@ const Community = () => {
                 </Card>
               </Tab>
               <Tab key="Government" title="Government">
-                <Card>
+                <Card className="default-card text-white">
                   <CardBody>
                     Since 2016, Dimtech has been recognized as a "Jeune
                     Entreprise Innovante" (Innovative Company). Additionally,

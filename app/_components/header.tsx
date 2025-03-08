@@ -37,7 +37,7 @@ const Header = () => {
   return (
     <header className="bg-transparent">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        <div className="flex py-8 items-center justify-between">
+        <div className="flex items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
             <a className="block" href="#">
               <span className="sr-only">Home</span>

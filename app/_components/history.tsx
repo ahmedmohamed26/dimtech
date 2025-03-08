@@ -76,11 +76,9 @@ const History = () => {
               </div>
 
               <div
-                className="order-1 bg-[#000c2b] rounded-lg shadow-xl w-5/12 px-6 py-4 
+                className="custom-card order-1 rounded-lg shadow-xl w-5/12 px-6 py-4 
         border border-opacity-20 border-[#001141]
-        transition-all duration-[2s] ease-in-out 
-        hover:border-[#001141] 
-        hover:bg-gradient-to-b hover:from-[#002d9c] hover:to-[#000410]"
+       "
               >
                 <h3 className="mb-3 font-bold text-xl text-gray-800">
                   {history.title}
