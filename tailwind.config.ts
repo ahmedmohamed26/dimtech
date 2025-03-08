@@ -9,8 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#00acd3",
+        white: "#fff",
+        black: "#000000",
+        gray: "#07339b",
+      },
+      fontSize: {
+        titleSize: "3rem",
+        size14: "14px",
+        size16: "16px",
+        size18: "18px",
+        size20: "20px",
+        size22: "22px",
+        size24: "24px",
       },
     },
   },

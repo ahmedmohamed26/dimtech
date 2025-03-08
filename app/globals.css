@@ -3,25 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --accent-10: #edf5ff;
+  --accent-20: #d0e2ff;
+  --accent-30: #a6c8ff;
+  --accent-40: #78a9ff;
+  --accent-50: #4589ff;
+  --accent-60: #0f62fe;
+  --accent-70: #0043ce;
+  --accent-80: #002d9c;
+  --accent-90: #001d6c;
+  --accent-100: #001141;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background: rgb(10, 35, 71);
+  background: linear-gradient(
+    140deg,
+    rgba(10, 35, 71, 1) 0%,
+    rgba(7, 51, 155, 1) 53%,
+    rgba(10, 35, 71, 1) 72%
+  );
+
+  height: 100vh;
+  margin: 0;
+  color: #ffffff;
+
   font-family: Arial, Helvetica, sans-serif;
+  /* height: 3000px; */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.container {
+  @apply mx-auto  max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8;
 }
