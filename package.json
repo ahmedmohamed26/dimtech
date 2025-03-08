@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@heroui/react": "^2.7.4",
-    "motion": "^12.4.10",
     "next": "14.2.24",
     "react": "^18",
+    "react-alice-carousel": "^2.9.1",
     "react-dom": "^18"
   },
   "devDependencies": {

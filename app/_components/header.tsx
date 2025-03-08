@@ -21,11 +21,11 @@ const Header = () => {
     },
     {
       name: "Community",
-      href: "/Community",
+      href: "#community",
     },
     {
       name: "Executive",
-      href: "/Executive",
+      href: "#executive",
     },
 
     {

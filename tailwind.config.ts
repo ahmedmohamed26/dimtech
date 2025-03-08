@@ -28,6 +28,8 @@ const config: Config = {
       },
     },
   },
+  darkMode: "class",
+
   plugins: [heroui()],
 };
 export default config;
