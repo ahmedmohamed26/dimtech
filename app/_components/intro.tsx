@@ -22,7 +22,7 @@ const Intro = () => {
     },
   ];
   return (
-    <div className="h-[500px] text-center py-20 flex flex-col justify-center items-center">
+    <div className="container h-[600px] text-center py-16 flex flex-col justify-center items-center">
       <h2 className="text-5xl">Science-Driven Quantitative Finance</h2>
       <p className="text-xl mt-8 text-primary">Deep Finance</p>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-16 mt-16">
