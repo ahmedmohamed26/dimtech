@@ -1,12 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const pathName = usePathname();
   const navList = [
     {
       name: "Home",
@@ -42,7 +40,7 @@ const Header = () => {
   };
   return (
     <header className="bg-transparent">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
             <a className="block" href="#">
@@ -56,14 +54,7 @@ const Header = () => {
               <ul className="flex items-center gap-6 text-sm">
                 {navList.map((navItem) => (
                   <li key={navItem.name}>
-                    <Link
-                      className={`text-size16 ${
-                        pathName === navItem.href
-                          ? "text-primary"
-                          : "text-white"
-                      }`}
-                      href={navItem.href}
-                    >
+                    <Link className="text-size16" href={navItem.href}>
                       {navItem.name}
                     </Link>
                   </li>

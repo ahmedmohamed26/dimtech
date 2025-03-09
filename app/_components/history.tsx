@@ -41,10 +41,14 @@ const History = () => {
   ];
 
   return (
-    <div className="container">
-      <h3 className="text-size40 relative inline-block  after:content-[''] after:absolute after:left-0  after:bottom-[-10px] after:w-24 after:h-[3px] after:bg-white">
-        History
-      </h3>
+    <div className="container py-16">
+      <h3 className="text-size40">History</h3>
+      <p className="text-size20 opacity-[.75] text-white max-w-[65%] mt-4">
+        Discover Dimtech’s journey from its founding to becoming a leader in
+        quantitative finance. Explore key milestones, technological
+        advancements, and strategic expansions that have shaped our success over
+        the years.
+      </p>
 
       <div className="container bg-gray-200 mx-auto w-full h-full py-16">
         <div className="relative wrap overflow-hidden p-10 h-full">
@@ -83,7 +87,7 @@ const History = () => {
                 <h3 className="mb-3 font-bold text-xl text-gray-800">
                   {history.title}
                 </h3>
-                <p className="text-sm leading-snug tracking-wide text-gray-900">
+                <p className="text-sm leading-6 tracking-wide opacity-[.75] text-white">
                   {history.description}
                 </p>
               </div>
