@@ -133,10 +133,9 @@ const Executive = () => {
     <div className="container py-16">
       <h3 className="text-size40"> Our Executive</h3>
       <p className="text-size20 opacity-[.75] text-white max-w-[65%] mt-4">
-        Discover Dimtech’s journey from its founding to becoming a leader in
-        quantitative finance. Explore key milestones, technological
-        advancements, and strategic expansions that have shaped our success over
-        the years.
+        Meet the experts behind Dimtech. Our leadership team brings extensive
+        experience in quantitative finance, technology, and global strategy,
+        ensuring cutting-edge solutions and industry-leading expertise.
       </p>
 
       <div className="mt-12">
