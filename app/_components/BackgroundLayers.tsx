@@ -47,7 +47,7 @@ const BackgroundLayers: React.FC<{ children: React.ReactNode }> = ({
             }}
           ></div>
 
-          <div className="relative z-50 h-full overflow-y-auto p-10 text-white">
+          <div className="relative z-50 h-full overflow-y-auto  text-white">
             {children}
           </div>
         </div>

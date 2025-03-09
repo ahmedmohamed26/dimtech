@@ -1,6 +1,5 @@
 import dynamic from "next/dynamic";
 const Community = dynamic(() => import("./_components/community"));
-const Header = dynamic(() => import("./_components/header"));
 const History = dynamic(() => import("./_components/history"));
 const Intro = dynamic(() => import("./_components/intro"));
 const Executive = dynamic(() => import("./_components/executive"), {
@@ -10,18 +9,25 @@ const Executive = dynamic(() => import("./_components/executive"), {
 export default function Home() {
   return (
     <div>
-      <Header />
-      <div className="container">
-        <Intro />
-        <div id="history">
-          <History />
-        </div>
-        <div id="community">
-          <Community />
-        </div>
-        <div id="executive">
-          <Executive />
-        </div>
+      <Intro />
+      <span className="flex items-center">
+        <span className="h-2 flex-1 bg-black"></span>
+      </span>
+
+      <div className="container" id="history">
+        <History />
+      </div>
+      <span className="flex items-center">
+        <span className="h-2 flex-1 bg-black"></span>
+      </span>
+      <div id="community">
+        <Community />
+      </div>
+      <span className="flex items-center">
+        <span className="h-2 flex-1 bg-black"></span>
+      </span>
+      <div id="executive">
+        <Executive />
       </div>
     </div>
   );
