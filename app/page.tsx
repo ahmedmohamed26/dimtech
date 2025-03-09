@@ -1,8 +1,11 @@
-import Community from "./_components/community";
-import Executive from "./_components/executive";
-import Header from "./_components/header";
-import History from "./_components/history";
-import Intro from "./_components/intro";
+import dynamic from "next/dynamic";
+const Community = dynamic(() => import("./_components/community"));
+const Header = dynamic(() => import("./_components/header"));
+const History = dynamic(() => import("./_components/history"));
+const Intro = dynamic(() => import("./_components/intro"));
+const Executive = dynamic(() => import("./_components/executive"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
