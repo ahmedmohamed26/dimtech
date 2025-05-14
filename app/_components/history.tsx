@@ -182,7 +182,7 @@ const History = () => {
 
   return (
     <div
-      className="container py-24  flex flex-col justify-center"
+      className="container pb-24 pt-12 flex flex-col justify-center"
       id="history"
       ref={sectionRef}
       onTouchStart={handleContainerTouchStart}
