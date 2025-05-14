@@ -53,7 +53,7 @@ const Intro = () => {
           Science-Driven Quantitative Solution
         </motion.h2>
         <motion.p
-          className="md:text-4xl text-2xl mt-6 text-white font-medium z-40 mb-[10%]"
+          className="md:text-4xl text-2xl mt-6 text-white font-medium z-40 "
           initial={{ opacity: 0, x: -50 }}
           animate={hasAnimated ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -61,7 +61,7 @@ const Intro = () => {
           Deep Finance
         </motion.p>
         <motion.div
-          className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-16 md:mt-16 mt-4"
+          className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-16 md:mt-32 mt-4  "
           initial="hidden"
           animate={hasAnimated ? "visible" : "hidden"}
           variants={{
