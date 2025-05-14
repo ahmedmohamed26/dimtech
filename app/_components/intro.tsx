@@ -43,7 +43,7 @@ const Intro = () => {
       <Header />
       <ParticleBackground />
       <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-[-1]" />
-      <div className="mt-[150px] container h-[100vh] text-center py-16 flex flex-col justify-center items-center">
+      <div className="mt-[190px] container h-[100vh] text-center py-16 flex flex-col justify-center items-center">
         <motion.h2
           className="text-white text-2xl md:text-6xl font-bold z-40"
           initial={{ opacity: 0, y: -50 }}
